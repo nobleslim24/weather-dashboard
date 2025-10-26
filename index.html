@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white py-4 text-center">
+      <h1 class="text-2xl font-bold">Weather Dashboard</h1>
+    </header>
+
+    <main class="max-w-2xl mx-auto mt-8 p-4 bg-white shadow-md rounded-lg">
+      <div class="flex justify-center mb-4">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Enter city name"
+          class="border p-2 rounded-l-md w-2/3"
+        />
+        <button
+          id="searchBtn"
+          class="bg-blue-600 text-white px-4 rounded-r-md hover:bg-blue-700"
+        >
+          Search
+        </button>
+      </div>
+
+      <div id="weatherContainer" class="text-center">
+        <h2 id="cityName" class="text-xl font-semibold mb-2"></h2>
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <p id="windSpeed"></p>
+        <img id="weatherIcon" alt="" class="mx-auto mt-4" />
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
