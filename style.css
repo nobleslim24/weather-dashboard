@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease;
+}
+
+.sun-icon {
+  width: 120px;
+  height: 120px;
+  animation: rotateSun 4s linear infinite;
+}
+
+@keyframes rotateSun {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+.main {
+  min-height: 100vh;
+  background-color: cornflowerblue;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.small-sun {
+  width: 60px;
+  height: 60px;
+  animation: rotateSun 6s linear infinite;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+.search-section {
+  margin-bottom: 2rem;
+}
+
+#cityInput {
+  padding: 0.7rem 1rem;
+  width: 250px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#searchBtn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #ffa500;
+  color: white;
+  border-radius: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#searchBtn:hover {
+  background: #ff8c00;
+}
+
+
+.weather-info {
+  font-size: 1.2rem;
+  color: #333;
+}

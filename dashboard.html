@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+ <script src="dashboard.js" defer></script>
+
+
+
+  
+</head>
+<body class="flex flex-col items-center min-h-screen p-4">
+
+<header class="flex items-center justify-center gap-3 text-white text-xl mb-6">
+  <button class="text-2xl font-bold">+</button>
+
+  <div class="flex items-center bg-white bg-opacity-10 backdrop-blur-md rounded-full px-4 py-2 w-56">
+    <input 
+      type="text" 
+      id="citySearch" 
+      placeholder="Search city..." 
+      class="bg-transparent text-white placeholder-gray-300 outline-none w-full text-center"
+    >
+  </div>
+
+  <button class="text-2xl font-bold">⋮</button>
+</header>
+
+<section class="text-center mt-10">
+  <h2 id="temperature" class="text-7xl font-bold">--°C</h2>
+  <p id="condition" class="text-lg mt-2">--</p>
+  <button id="aqiBtn" class="bg-white bg-opacity-20 text-white px-4 py-2 rounded-xl mt-3">AQI - --</button>
+</section>
+
+ 
+<section class="forecast-container">
+  <h3 class="forecast-title">Three Day Forecast</h3>
+
+  <div id="forecastList">
+  
+  </div>
+</section>
+
+
+<section class="details-container">
+  <h3 class="details-title">Weather Details</h3>
+
+  <div id="detailsGrid" class="details-grid">
+    <p>Humidity <span id="d-humidity" class="value">--%</span></p>
+    <p>Wind <span id="d-wind" class="value">--</span></p>
+    <p>UV <span id="d-uv" class="value">--</span></p>
+    <p>Pressure <span id="d-pressure" class="value">--</span></p>
+    <p>Real feel <span id="d-feels" class="value">--</span></p>
+    <p>Chance of rain <span id="d-rain" class="value">--</span></p>
+  </div>
+
+  <div class="air-quality">
+    <p id="aqi" class="aqi">AQI - --</p>
+    <p id="aqiText" class="quality">Air quality is --</p>
+  </div>
+</section>
+
+
+  
+<div class="forecast-btn-container">
+  <button class="forecast-btn">3-Day Forecast</button>
+</div>
